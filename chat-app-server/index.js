@@ -7,6 +7,7 @@ const socketIO = require('socket.io');
 const app = express();
 const port = process.env.PORT || 5000
 
+app.use(cors());
 app.get('/', (req, res) =>{
     res.send('Chat App Server is running')
 })
