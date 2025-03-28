@@ -1,12 +1,13 @@
-import React from 'react';
-import Join from '../components/Join/Join';
+import { Outlet } from "react-router-dom";
+import Navbar from "../shared-components/Navbar";
 
 const MainLayout = () => {
-    return (
-        <div>
-            <Join/>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar />
+      <Outlet />
+    </div>
+  );
 };
 
 export default MainLayout;
